@@ -61,3 +61,12 @@ img {
 #toc a:hover {
   color: red;
 }
+
+#toppage a {
+  color: black;
+  text-decoration: none;
+}
+
+#toppage a {
+  color: red;
+}
