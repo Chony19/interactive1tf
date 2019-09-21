@@ -53,11 +53,32 @@ img {
   width: 25%
 }
 
+.suninmiddle {
+  width: 30%;
+}
+
+.izumiyamenu {
+  width: 14%;
+  transition: transform .2s; /* Animation */
+}
+
+.izumiyamenu:hover{
+  transform: scale(3.0);
+}
+
+.peacepagodacloseup {
+  width: 15%;
+  transition: transform .2s;
+}
+
+.peacepagodacloseup:hover {
+  transform: scale(2.0);
+}
+
 #toc a {
   color: black;
   text-decoration: none;
 }
-
 #toc a:hover {
   color: red;
 }
@@ -66,7 +87,54 @@ img {
   color: black;
   text-decoration: none;
 }
+#toppage a:hover{
+  color: red;
+}
 
-#toppage a {
+.center {
+  position: relative;
+  display: inline-block;
+}
+
+.center-content {
+  display: none;
+  position: absolute;
+  background-color: #A9A9A9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.japancenter {
+  color: black;
+  text-decoration: none;
+}
+
+.japancenter:hover {
+  color: red;
+}
+
+.dropdownpeacetown {
+  position: relative;
+  display: inline-block;
+}
+.dropdownpeacetown-content {
+  display: none;
+  position: absolute;
+  background-color: #F9F9F9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdownpeacetown:hover .dropdownpeacetown-content {
+  display: block;
+}
+.japanpeacetown {
+  color: black;
+  text-decoration: none;
+}
+.japanpeacetown:hover {
   color: red;
 }
