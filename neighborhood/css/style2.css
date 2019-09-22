@@ -1,13 +1,72 @@
 body {
   background: white;
   font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: "roboto";
+  font-weight: 900;
+  font-size: 144px;
+  line-height: 0px;
+}
+
+h2 {
+  font-family: "roboto", condensed;
+  font-weight: 900;
+  font-size: 72px;
+}
+
+h3 {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 36px;
+  padding: 0px 550px 0px 300px;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+h4 {
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 24px;
+  color: #800000;
+  padding: 0px 550px 10px 200px;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+h5 {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h6 {
+  font-family: "roboto";
+  font-style: italic;
+  font-weight: 100;
+  font-size: 8px;
+}
+
+p {
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0px 550px 10px 300px;
+  line-height: 30px;
+}
+
+.bodyphotos {
+  width: 100%;
+  padding-top: 10px;
 }
 
 .suninmiddlecopy {
   width: 80%;
   filter: blur(1px);
   filter: brightness(.33);
-  margin-left: 150px;
+  padding-left: 150px;
 }
 
 .guide {

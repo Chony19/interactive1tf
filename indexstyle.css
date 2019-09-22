@@ -34,6 +34,8 @@ h3 {
   margin-left: 175px;
   margin-right: 200px;
   line-height: 48px;
+  border-bottom: 2px solid black;
+  padding: 0px 0px 10px 0px;
 }
 
 #weekly-exercises {
