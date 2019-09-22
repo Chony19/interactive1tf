@@ -4,10 +4,75 @@ body {
     font-family: 'Roboto Mono', monospace;
     text-rendering: optimizeLegibility;
     background: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-image: url("me2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
   font-family: "roboto";
-  font-size: 288px;
-  font-style: oblique;
+  font-style: bold;
+  font-size: 144px;
+  line-height: 0px;
+}
+
+h2 {
+  font-family: "roboto";
+  font-size: 54px;
+}
+
+h3 {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.desc {
+  margin-left: 250px;
+  margin-right: 250px;
+  line-height: 48px;
+}
+
+p {
+  font-family: "roboto";
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  line-height: 8px;
+}
+
+.exterior a{
+  color: black;
+  text-decoration: none;
+}
+.exterior a:hover{
+  color:red;
+}
+
+.interior a{
+  color: black;
+  text-decoration: none;
+}
+.interior a:hover{
+  color:red;
+}
+
+.neighborhood a{
+  color: black;
+  text-decoration: none;
+}
+.neighborhood a:hover{
+  color:red;
+}
+
+.copied a{
+  color: black;
+  text-decoration: none;
+}
+.copied a:hover{
+  color:red;
 }
