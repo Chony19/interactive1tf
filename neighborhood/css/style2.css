@@ -124,11 +124,12 @@ p {
 }
 
 #toc {
-  float: right;
   margin-right: 225px;
-  margin-top: 50px;
+  margin-left: 1150px;
+  margin-top: -50px;
   padding-right: 45px;
   background-color: #1DA237;
+  position: fixed;
 }
 
 #jump {
