@@ -30,7 +30,7 @@ h4 {
   font-family: "roboto";
   font-weight: 100;
   font-size: 24px;
-  color: #800000;
+  color: #1B6453;
   padding: 0px 550px 10px 200px;
   letter-spacing: 1px;
   line-height: 35px;
@@ -38,8 +38,12 @@ h4 {
 
 h5 {
   font-family: "roboto";
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 100;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #CFDBC5;
+  letter-spacing: 1px;
+  line-height: 5px;
 }
 
 h6 {
@@ -73,7 +77,7 @@ p {
   position: absolute;
   top: 10px;
   left: 200px;
-  text-decoration: none;
+  text-decoration : none;
 }
 
 .gd {
@@ -117,4 +121,22 @@ p {
   position: absolute;
   top: 400px;
   left: 300px;
+}
+
+#toc {
+  float: right;
+  margin-right: 225px;
+  margin-top: 50px;
+  padding-right: 45px;
+  background-color: #1DA237;
+}
+
+#jump {
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #CFDBC5;
+  letter-spacing: 1px;
+  line-height: 1px;
 }
