@@ -30,6 +30,15 @@ h3 {
   font-weight: 300;
 }
 
+h4 {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
 .desc {
   margin-left: 175px;
   margin-right: 200px;
@@ -38,9 +47,11 @@ h3 {
   padding: 0px 0px 10px 0px;
 }
 
-#weekly-exercises {
+.weekly-exercises {
   margin-left: 200px;
 }
+
+#exercises
 
 p {
   font-family: "roboto";
@@ -79,7 +90,7 @@ p {
   color:red;
 }
 
-.mickey {
+.mickey a{
   color: black;
   text-decoration: none;
 }
