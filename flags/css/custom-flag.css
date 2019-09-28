@@ -1,0 +1,161 @@
+* {
+        margin: 0px; padding: 0px;
+}
+
+/* make the background of the page black */
+body {
+        background: black;
+}
+
+/* flag canvas*/
+
+#canvas {
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+  background: white;
+}
+
+#trapezoid-1 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 25px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 25px;
+  transform: skew(25deg);
+  left: -15px;
+}
+
+#trapezoid-2 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 25px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 25px;
+  transform: skew(5deg);
+  left: 55px;
+}
+
+#trapezoid-3 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+	width: 25px;
+  transform: skew(-10deg);
+  left: 132px;
+}
+
+#trapezoid-4 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 45px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 25px;
+  transform: skew(-36deg);
+  left: 180px;
+}
+
+#trapezoid-5 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 75px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 25px;
+  transform: skew(-53deg);
+  bottom: 0;
+  left: 259px;
+}
+
+#trapezoid-6 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 175px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 45px;
+  transform: skew(-70deg);
+  left: 390px;
+}
+
+#trapezoid-7 {
+  position: absolute;
+  border-top: 300px solid blue;
+  border-left: 175px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+	width: 100px;
+  transform: skew(-80deg);
+  left: 900px;
+}
+
+#halfsun {
+  width: 200px;
+  height: 100px;
+  background: red;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.star {
+  fill: #FFDF00;
+}
+
+#star-1 {
+  position: absolute;
+  top: 200px;
+  left: 35px;
+}
+
+#star-2 {
+  position: absolute;
+  top: 135px;
+  left: 63px;
+}
+
+#star-3 {
+  position: absolute;
+  top: 80px;
+  left: 125px;
+}
+
+#star-4 {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+#star-5 {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+}
+
+#star-6 {
+  position: absolute;
+  top: 85px;
+  right: -110px;
+}
+
+#star-7 {
+  position: absolute;
+  bottom: 0px;
+  right: -50px;
+}
+
+#rectangle {
+  position: absolute;
+  width: 2000px;
+  height: 300px;
+  background: black;
+  top: 0;
+  left: 500px;
+}
