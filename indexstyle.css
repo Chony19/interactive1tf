@@ -61,39 +61,9 @@ p {
   line-height: 8px;
 }
 
-.exterior a{
+.redhover a{
   color: black;
   text-decoration: none;
 }
-.exterior a:hover{
+.redhover a:hover{
   color:red;
-}
-.interior a{
-  color: black;
-  text-decoration: none;
-}
-.interior a:hover{
-  color:red;
-}
-.neighborhood a{
-  color: black;
-  text-decoration: none;
-}
-.neighborhood a:hover{
-  color:red;
-}
-.copied a{
-  color: black;
-  text-decoration: none;
-}
-.copied a:hover{
-  color:red;
-}
-
-.mickey a{
-  color: black;
-  text-decoration: none;
-}
-.mickey a:hover {
-  color: red;
-}

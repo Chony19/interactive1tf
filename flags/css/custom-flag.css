@@ -14,10 +14,23 @@ body {
   height: 300px;
   position: relative;
   background: white;
+  z-index: -4;
+}
+
+.trapezoid {
+  position: absolute;
+  z-index: -2;
+  animation: trapz 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 7;
+  z-index: -4;
+}
+@keyframes trapz {
+  0% {opacity: 0.25;}
+  100% {opacity: 1;}
 }
 
 #trapezoid-1 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 25px solid transparent;
   border-right: 0px solid transparent;
@@ -28,7 +41,6 @@ body {
 }
 
 #trapezoid-2 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 25px solid transparent;
   border-right: 0px solid transparent;
@@ -39,7 +51,6 @@ body {
 }
 
 #trapezoid-3 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 0px solid transparent;
   border-right: 25px solid transparent;
@@ -50,7 +61,6 @@ body {
 }
 
 #trapezoid-4 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 45px solid transparent;
   border-right: 0px solid transparent;
@@ -61,7 +71,6 @@ body {
 }
 
 #trapezoid-5 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 75px solid transparent;
   border-right: 0px solid transparent;
@@ -73,7 +82,6 @@ body {
 }
 
 #trapezoid-6 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 175px solid transparent;
   border-right: 0px solid transparent;
@@ -84,7 +92,6 @@ body {
 }
 
 #trapezoid-7 {
-  position: absolute;
   border-top: 300px solid blue;
   border-left: 175px solid transparent;
   border-right: 0px solid transparent;
@@ -94,96 +101,216 @@ body {
   left: 900px;
 }
 
+/*SUN*/
 #halfsun {
   width: 200px;
-  height: 100px;
+  height: 200px;
   background: red;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+  border-radius: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 30px;
+  z-index: 1;
+  animation: sun 1s alternate;
+  animation-iteration-count: 14;
+  z-index: 1;
+}
+@keyframes sun {
+  0% {
+    opacity: 0.99;
+  }
+  100% {
+    width: 215px;
+    height: 215px;
+    background: red;
+    position: absolute;
+    opacity: 1;
+  }
 }
 
+
+/*--STAR--*/
 .star {
-  fill: #FFDF00;
+  background: #FFDF00;
+  position: absolute;
 }
 
 #star-1 {
-  position: absolute;
-  top: 200px;
-  left: 35px;
+  width: 25px;
+  height: 25px;
+  top: 275px;
+  left: 105px;
+  -webkit-clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  animation: star1 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star1 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-70px, -75px);}
 }
 
+/*#star-1 {
+  width: 25px;
+  height: 25px;
+  top: 200px;
+  left: 35px;
+  -webkit-clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  animation: star1 3s;
+  animation-delay: 0s;
+  z-index: -1;
+}
+
+@keyframes star1 {
+  from {transform: translate(45px, 75px);}
+  to {transform: translate(0, 0);}
+}
+*/
+
 #star-2 {
-  position: absolute;
-  top: 135px;
-  left: 63px;
+  /*top: 135px; left: 63px;*/
+  top: 225px;
+  left: 105px;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(25px 3px, 10px 50px, 48px 20px, 3px 20px, 40px 50px);
+  animation: star2 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star2 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-42px, -90px);}
 }
 
 #star-3 {
-  position: absolute;
-  top: 80px;
-  left: 125px;
+  /*top: 80px; left: 125px;*/
+  top: 200px;
+  left: 105px;
+  width: 75px;
+  height: 75px;
+  clip-path: polygon(33px 4px, 13px 66px, 63px 26px, 3px 26px, 53px 66px);
+  animation: star3 1s ;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star3 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(20px, -120px);}
 }
 
 #star-4 {
-  position: absolute;
-  top: 0;
-  left: 240px;
+  /*top: 0; left: 240px;*/
+  top: 200px;
+  left: 105px;
+  clip-path: polygon(50px 5px, 20px 99px, 95px 39px, 5px 39px, 80px 99px);
+  width: 100px;
+  height: 100px;
+  animation: star4 1s ;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star4 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(135px, -200px);}
 }
 
 #star-5 {
-  position: absolute;
-  top: -75px;
-  right: -75px;
+  /*top: -75px; right: -75px;*/
+  top: 300px;
+  left: 30px;
+  clip-path: polygon(100px 10px, 40px 198px, 190px 78px, 10px 78px, 160px 198px);
+  width: 200px;
+  height: 200px;
+  animation: star5 1s ;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star5 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(345px, -390px);}
 }
 
 #star-6 {
-  position: absolute;
-  top: 85px;
-  right: -110px;
+  /*top: 105px; left: 425px;*/
+  top: 200px;
+  left: 105px;
+  clip-path: polygon(50px 5px, 20px 99px, 95px 39px, 5px 39px, 80px 99px);
+  width: 175px;
+  height: 175px;
+  animation: star6 1s ;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star6 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(350px, -95px);}
 }
 
 #star-7 {
-  position: absolute;
-  bottom: 0px;
-  right: -50px;
+  /*top: 200px; left: 450px;*/
+  top: 200px;
+  left: 105px;
+  clip-path: polygon(50px 5px, 20px 99px, 95px 39px, 5px 39px, 80px 99px);
+  width: 100px;
+  height: 100px;
+  animation: star7 1s ;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+@keyframes star7 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(335px, -0px);}
 }
 
-#rectangle {
+#rectangle-right {
   position: absolute;
   width: 2000px;
   height: 300px;
   background: black;
-  top: 0;
   left: 500px;
 }
 
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: red;
+#rectangle-bottom {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
-  -webkit-clip-path: square(11.6% at 50% 50%);
-  clip-path: square(20% at 50% 50%);
+  width: 2000px;
+  height: 300px;
+  background: black;
+  top: 300px;
   z-index: 1;
-  animation: square 3s alternate infinite;
 }
 
 
-
 /*
-clip-me-circle {
+.clip-me6 {
         width: 500px;
         height: 300px;
-        -webkit-clip-path: circle(11.6% at 50% 50%);
-        clip-path: circle(20% at 50% 50%);
+        -webkit-clip-path: polygon(50% 18%, 46% 40%, 54% 40%);
+        clip-path: polygon(50% 18%, 46% 40%, 54% 40%);
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: -30px;
+        left:0px;
+        background: #e9a322;
+        z-index: 3;
+        animation: point 3s alternate infinite;
+}
 
-        z-index: 1;
-        animation: circle 3s alternate infinite;
+@keyframes point {
+        100%{
+        -webkit-clip-path: polygon(50% 18%, 46% 40%, 54% 40%);
+        clip-path: polygon(50% 30%, 46% 40%, 54% 40%);
+        position: absolute;
+        top: -30px;
+        left:0px;
+        background: #f15a22; }
+}
+*/
