@@ -159,3 +159,31 @@ body {
   top: 0;
   left: 500px;
 }
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  -webkit-clip-path: square(11.6% at 50% 50%);
+  clip-path: square(20% at 50% 50%);
+  z-index: 1;
+  animation: square 3s alternate infinite;
+}
+
+
+
+/*
+clip-me-circle {
+        width: 500px;
+        height: 300px;
+        -webkit-clip-path: circle(11.6% at 50% 50%);
+        clip-path: circle(20% at 50% 50%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        z-index: 1;
+        animation: circle 3s alternate infinite;
