@@ -15,6 +15,7 @@ body {
   position: relative;
   background: white;
   z-index: -4;
+  overflow: hidden;
 }
 
 .trapezoid {
@@ -29,6 +30,27 @@ body {
   0% {opacity: 0.25;}
   100% {opacity: 1;}
 }
+
+/*#star-1 {
+  width: 25px;
+  height: 25px;
+  top: 275px;
+  left: 105px;
+  -webkit-clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
+  animation: star1 1s alternate;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  z-index: -2;
+}
+@keyframes star1 {
+  0% {
+    transform: translate(0px, 0px);
+}
+  100% {
+    transform: translate(-70px, -75px);
+  }
+}*/
 
 #trapezoid-1 {
   border-top: 300px solid blue;
@@ -96,7 +118,7 @@ body {
   border-left: 175px solid transparent;
   border-right: 0px solid transparent;
   height: 0;
-	width: 100px;
+	width: 150px;
   transform: skew(-80deg);
   left: 900px;
 }
@@ -113,7 +135,6 @@ body {
   z-index: 1;
   animation: sun 1s alternate;
   animation-iteration-count: 14;
-  z-index: 1;
 }
 @keyframes sun {
   0% {
@@ -133,7 +154,33 @@ body {
 .star {
   background: #FFDF00;
   position: absolute;
+  animation: star 1s alternate infinite;
+  animation-timing-function: ease-in-out;
+
 }
+
+@keyframes star {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.5);}
+}
+
+/*
+animation-name: pulse;
+animation-duration: .8s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+@-webkit-keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+*/
 
 #star-1 {
   width: 25px;
@@ -142,14 +189,18 @@ body {
   left: 105px;
   -webkit-clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
   clip-path: polygon(13px 2px, 5px 25px, 24px 10px, 2px 10px, 20px 25px);
-  animation: star1 1s;
+  animation: star1 1s alternate;
   animation-delay: 0s;
   animation-fill-mode: forwards;
-  z-index: -1;
+  z-index: -2;
 }
 @keyframes star1 {
-  from {transform: translate(0px, 0px);}
-  to {transform: translate(-70px, -75px);}
+  0% {
+    transform: translate(0px, 0px);
+}
+  100% {
+    transform: translate(-70px, -75px);
+  }
 }
 
 /*#star-1 {
@@ -225,7 +276,7 @@ body {
   /*top: -75px; right: -75px;*/
   top: 300px;
   left: 30px;
-  clip-path: polygon(100px 10px, 40px 198px, 190px 78px, 10px 78px, 160px 198px);
+  clip-path: polygon(75px 8px, 30px 149px, 143px 59px, 8px 59px, 120px 149px);
   width: 200px;
   height: 200px;
   animation: star5 1s ;
@@ -235,7 +286,7 @@ body {
 }
 @keyframes star5 {
   from {transform: translate(0px, 0px);}
-  to {transform: translate(345px, -390px);}
+  to {transform: translate(355px, -345px);}
 }
 
 #star-6 {
@@ -270,23 +321,6 @@ body {
 @keyframes star7 {
   from {transform: translate(0px, 0px);}
   to {transform: translate(335px, -0px);}
-}
-
-#rectangle-right {
-  position: absolute;
-  width: 2000px;
-  height: 300px;
-  background: black;
-  left: 500px;
-}
-
-#rectangle-bottom {
-  position: absolute;
-  width: 2000px;
-  height: 300px;
-  background: black;
-  top: 300px;
-  z-index: 1;
 }
 
 

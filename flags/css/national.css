@@ -11,20 +11,90 @@ body {
 
 /* flag canvas*/
 
+.ricebeans {
+  width: 25px;
+  z-index: 1;
+  margin-top: -2px;
+  margin-right: -4px;
+  margin-bottom: -2px;
+  margin-left: -4px;
+  position: absolute;
+}
+
+#rb0 {
+  width: 100px;
+  top: 230px;
+  left: 415px;
+  margin: -4px;
+}
+
+#rb1 {
+  width: 75px;
+  top: 174px; left: 435px;
+  /*top: 230px; left: 415px;*/
+  margin: -4px;
+  transition: transform 1s;
+}
+/*#rb1:hover {
+  transform: translate(20px, -56px);
+  z-index: 1;
+}*/
+
+#rb2 {
+  width: 75px;
+  top: 248px;
+  left: 355px;
+  margin: -4px;
+}
+
+#rb3 {
+  width: 50px;
+  top: 135px;
+  left: 457px;
+  margin: -4px;
+}
+
+#rb4 {
+  width: 50px;
+  top: 175px;
+  left: 397px;
+  margin: -4px;
+}
+
+#rb5 {
+  width: 50px;
+  top: 215px;
+  left: 347px;
+  margin: -4px;
+}
+
+#rb6 {
+  width: 50px;
+  top: 258px;
+  left: 290px;
+  margin: -4px;
+}
+
 #canvas {
   width: 500px;
   height: 300px;
   position: relative;
   background: white;
+  z-index: -5;
 }
 
 /* shapes*/
+
+.rect {
+  z-index: -1;
+}
+
 #toprectangle {
   width: 500px;
   height: 50px;
   background: blue;
   position: absolute;
-
+  z-index: -1;
 }
 
 #middlerectangle {
@@ -41,4 +111,10 @@ body {
   background: blue;
   position: absolute;
   top: 250px;
+}
+
+#carreta {
+  width: 100px;
+  top: -100px;
+  left: -100px;
 }
