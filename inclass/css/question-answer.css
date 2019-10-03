@@ -1,0 +1,120 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100px;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Notable', sans-serif;
+}
+#question{
+  font-family: "kanit";
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ecdcc2;
+  width: 100vw;
+  height: 100vh;
+  animation: bg 2s alternate infinite;
+}
+@keyframes bg {
+  0% {background-color: #ecdcc2;}
+  100% {background: #6f4e37;}
+}
+#therealquestion {
+  display: none;
+}
+#newquestion {
+  display: none;
+}
+#answer {
+  display: none;
+}
+
+/* The Real Question is... */
+@media (max-width: 1200px) and (min-width: 900px){
+  #therealquestion {
+    font-family: "Notable";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #8eb676;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  #question {
+    display: none;
+  }
+  #newquestion {
+    display: none;
+  }
+  #answer {
+    display: none;
+  }
+}
+
+/* New question */
+@media (max-width: 900px) and (min-width: 600px){
+  #newquestion {
+    font-family: "kanit";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fafad0;
+    color: #9e6b17;
+    width: 100vw;
+    height: 100vh;
+  }
+  #question {
+    display: none;
+  }
+  #therealquestion {
+    display: none;
+  }
+  #answer {
+    display: none;
+  }
+}
+
+/* answer */
+@media (max-width: 600px) {
+  #answer {
+    font-family: "Notable";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #bda88d;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    animation: extreme 1s infinite;
+  }
+  @keyframes extreme {
+    0% {background-color: #FF0000;}
+    14% {background-color: #FF7F00;}
+    28% {background-color: #FFFF00;}
+    42% {background-color: #00FF00;}
+    56% {background-color: #0000FF;}
+    70% {background-color: #4B0082;}
+    84% {background-color: #8B00FF;}
+    100% {background-color: white;}
+  }
+  #question {
+    display: none;
+  }
+  #therealquestion {
+    display: none;
+  }
+  #newquestion {
+    display: none;
+  }
+}
