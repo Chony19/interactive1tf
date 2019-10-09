@@ -1,0 +1,293 @@
+* {
+  margin-left: -50px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecdcc2;
+  animation: bg 2s alternate infinite;
+}
+@keyframes bg {
+  0% {background-color: #ecdcc2;}
+  100% {background: #6f4e37;}
+}
+
+@media (min-width: 1600px) {
+  #desktop {
+    display: inline-block;
+  }
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1600px) and (min-width: 1550px) {
+  #smalldesktop {
+    display: inline;
+  }
+  #desktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1550px) and (min-width: 1500px) {
+  #tablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1450px) {
+  #smalltablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) and (min-width: 1400px) {
+  #mobile {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1350px) {
+  #smallmobile {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) and (min-width: 1300px) {
+  #smalltablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1250px) {
+  #smalldesktop {
+    display: inline;
+  }
+  #desktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1200px) {
+  #tablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1150px) {
+  #smalltablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 1000px) {
+  #mobile {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 950px) {
+  #smallmobile {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 900px) {
+  #smalltablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 850px) {
+  #smalldesktop {
+    display: inline;
+  }
+  #desktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 800px) {
+  #tablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 750px) {
+  #smalltablet {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #mobile,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 700px) {
+  #mobile {
+    display: inline;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #smallmobile,
+  #small1,
+  #small2 {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+  #small1 {
+    display: inline;
+    z-index: 2;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small2 {
+    display: none;
+  }
+  .animate {
+    background: url("assets/alpaca7.png") no-repeat;
+  }
+  .animate:hover {
+    background: url("assets/alpaca8.png") no-repeat;
+  }
+}
