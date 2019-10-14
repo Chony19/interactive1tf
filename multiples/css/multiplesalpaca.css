@@ -1,16 +1,17 @@
 * {
   margin-left: -50px;
+  margin-top: 50px;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: #ecdcc2;
+  background: #efdecd;
   animation: bg 2s alternate infinite;
 }
 @keyframes bg {
-  0% {background-color: #ecdcc2;}
-  100% {background: #6f4e37;}
+  0% {background-color: #efdecd;}
+  100% {background: #d1b48d;}
 }
 
 @media (min-width: 1600px) {
@@ -23,7 +24,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -39,7 +41,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -54,7 +57,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -69,7 +73,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -84,7 +89,8 @@ body {
   #smalltablet,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -99,7 +105,8 @@ body {
   #smalltablet,
   #mobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -114,7 +121,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -129,7 +137,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -144,7 +153,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -159,7 +169,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -174,7 +185,8 @@ body {
   #smalltablet,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -189,7 +201,8 @@ body {
   #smalltablet,
   #mobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -204,7 +217,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -219,7 +233,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -234,7 +249,8 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
@@ -249,9 +265,14 @@ body {
   #mobile,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
+}
+
+#alpaca8{
+  display: none;
 }
 
 @media (max-width: 750px) and (min-width: 700px) {
@@ -264,16 +285,26 @@ body {
   #smalltablet,
   #smallmobile,
   #small1,
-  #small2 {
+  #small2,
+  #hoverme {
     display: none;
   }
 }
 
+#alpaca7 {
+  left: -50px;
+}
+
+#alpaca8{
+  display: none;
+  border-right: -200px;
+}
 
 @media (max-width: 700px) {
   #small1 {
     display: inline;
-    z-index: 2;
+    position: absolute;
+    left: -150px;
   }
   #desktop,
   #smalldesktop,
@@ -284,10 +315,52 @@ body {
   #small2 {
     display: none;
   }
-  .animate {
-    background: url("assets/alpaca7.png") no-repeat;
+}
+#small1:hover #alpaca7{
+  display: none;
+}
+
+#small1:hover #alpaca8 {
+  display: block;
+  animation: wobble .01s alternate infinite;
+}
+@keyframes wobble {
+  0% {
+    transform: rotate(-3deg);
   }
-  .animate:hover {
-    background: url("assets/alpaca8.png") no-repeat;
+  100% {
+    transform: rotate(3deg);
   }
+}
+
+#alpaca7 {
+  animation: bounce 1s alternate infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+#hoverme {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #6f4e37;
+  position: absolute;
+  top: 20px;
+  left: 250px;
+}
+
+#text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #6f4e37;
+  position: absolute;
+  top: 0;
+  left: 250px;
 }
