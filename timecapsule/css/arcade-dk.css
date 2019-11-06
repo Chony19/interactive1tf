@@ -1,0 +1,33 @@
+body {
+  font-family: 'VT323', monospace;
+  background-color: black;
+  position: relative;
+}
+
+.backgrounds {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+#title {
+  font-family: 'VT323';
+  font-size: 98px;
+  color: white;
+  font-weight: lighter;
+  margin-top: 0;
+  top: 20;
+  left: 538px;
+  position: absolute;
+  animation: memories 1s alternate infinite
+}
+@keyframes memories {
+  0% {color: #FFFF00}
+  20% {color: #FF00FF}
+  40% {color: #00FF00}
+  60% {color: #099FFF}
+  80% {color: #CC00FF}
+  100% {color: #F9F9F9}
+}

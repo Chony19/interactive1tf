@@ -1,0 +1,39 @@
+body {
+  font-family: 'VT323', monospace;
+  background-color: black;
+}
+
+.backgrounds {
+  background-position: center;
+  background-size: cover;
+}
+
+#arcade {
+  display: inline;
+}
+
+/*
+@media (max-width: 700px) {
+  #small1 {
+    display: inline;
+    position: absolute;
+    left: -150px;
+  }
+  #desktop,
+  #smalldesktop,
+  #tablet,
+  #smalltablet,
+  #mobile,
+  #smallmobile,
+  #small2 {
+    display: none;
+  }
+}
+#small1:hover #alpaca7{
+  display: none;
+}
+
+#small1:hover #alpaca8 {
+  display: block;
+  animation: wobble .01s alternate infinite;
+}
