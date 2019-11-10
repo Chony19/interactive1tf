@@ -1,0 +1,78 @@
+@media (max-width: 1080px) and (min-width: 200px) {
+
+  body {
+    font-family: 'VT323', monospace;
+    background-color: black;
+  }
+
+  #container {
+    max-width: 1080px;
+    max-height: 1920px;
+    position: relative;
+  }
+
+  #gameboy-start {
+    position: fixed;
+    transform: scale(0.5);
+    margin-top: -400px;
+    margin-left: -250px;
+    margin-bottom: -400px;
+    margin-right: -250px;
+    z-index: -5;
+    max-width: 1080px;
+    min-width: 640px;
+  }
+
+  #title {
+    font-family: 'VT323';
+    font-size: 98px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 0;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 5;
+    animation: memories 1s alternate infinite
+  }
+  @keyframes memories {
+    0% {color: #FFFF00}
+    20% {color: #FF00FF}
+    40% {color: #00FF00}
+    60% {color: #099FFF}
+    80% {color: #CC00FF}
+    100% {color: #F9F9F9}
+  }
+
+
+  h5 {
+    font-family: "VT323",monospace;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+  }
+
+  .switchgb {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  opacity: 1;
+  color: white;
+  position: absolute;
+  z-index: 5;
+  }
+  #onoff {
+    top: 70px;
+    left: 75px;
+  }
+  #start {
+    position: absolute;
+    top: 790px;
+    left: 270px;
+    transform: rotate(-27deg);
+  }
+
+
+
+
+}

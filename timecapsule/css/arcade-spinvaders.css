@@ -1,0 +1,113 @@
+body {
+  font-family: 'VT323', monospace;
+  background-color: black;
+  position: relative;
+}
+
+.backgrounds {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+#title {
+  font-family: 'VT323';
+  font-size: 98px;
+  color: white;
+  font-weight: lighter;
+  margin-top: 0;
+  top: 0;
+  left: 538px;
+  position: absolute;
+  animation: memories 1s alternate infinite
+}
+@keyframes memories {
+  0% {color: #FFFF00}
+  20% {color: #FF00FF}
+  40% {color: #00FF00}
+  60% {color: #099FFF}
+  80% {color: #CC00FF}
+  100% {color: #F9F9F9}
+}
+
+
+.white1 {
+  position: absolute;
+  transform: scale(.05);
+  top: 422px;
+  left: -268px;
+}
+.white1:hover {
+  transform: scale(.052);
+}
+
+.white2 {
+  position: absolute;
+  transform: scale(.05);
+  top: 422px;
+  left: -85px;
+}
+.white2:hover {
+  transform: scale(.052);
+}
+
+.white3 {
+  position: absolute;
+  transform: scale(.05);
+  top: 422px;
+  left: 33px;
+}
+.white3:hover {
+  transform: scale(.052);
+}
+
+.white4 {
+  position: absolute;
+  transform: scale(.05);
+  top: 422px;
+  left: 161px;
+}
+.white4:hover {
+  transform: scale(.052);
+}
+
+.redbutton {
+  transform: scale(.05);
+  position:absolute;
+  top: 455px;
+  left: -305px;
+}
+.redbutton:hover{
+  transform: scale(.052);
+}
+
+
+.buttonrelative {
+  position: relative;
+  z-index: 4;
+}
+.switch {
+  font-family: 'VT323', monospace;
+  opacity: 1;
+  color: white;
+  position: absolute;
+  z-index: 5;
+}
+#white1 {
+  top: 823px;
+  left: 541px;
+}
+#white2 {
+  top: 823px;
+  left: 720px;
+}
+#white3 {
+  top: 823px;
+  left: 840px;
+}
+#white4 {
+  top: 823px;
+  left: 955px;
+}
