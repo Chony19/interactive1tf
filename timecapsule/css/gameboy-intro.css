@@ -78,7 +78,7 @@
     text-decoration: none;
     position: absolute;
     top: 348px;
-    left: 185px;
+    left: 175px;
     animation: pressstart .5s alternate infinite;
   }
     @keyframes pressstart {
