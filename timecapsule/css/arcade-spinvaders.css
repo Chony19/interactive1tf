@@ -88,26 +88,133 @@ body {
   position: relative;
   z-index: 4;
 }
+
 .switch {
   font-family: 'VT323', monospace;
-  opacity: 1;
+  opacity: 0;
   color: white;
   position: absolute;
   z-index: 5;
 }
 #white1 {
-  top: 823px;
+  top: 835px;
   left: 541px;
 }
+#dk {
+  width: 75px;
+  position: absolute;
+  top: 805px;
+  left: 530px;
+  opacity: 0;
+}
+#dk:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white2 {
-  top: 823px;
+  top: 835px;
   left: 720px;
 }
+#pacmangif {
+  position: absolute;
+  width: 55px;
+  top: 800px;
+  left: 720px;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#pacmangif:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white3 {
-  top: 823px;
+  top: 835px;
   left: 840px;
 }
+#home {
+  width: 65px;
+  position: absolute;
+  top: 800px;
+  left: 835px;
+  opacity: 0;
+}
+#home:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white4 {
-  top: 823px;
+  top: 835px;
   left: 955px;
+}
+#stfightergif {
+  position: absolute;
+  width: 55px;
+  top: 800px;
+  left: 965px;
+  opacity: 0;
+}
+#stfightergif:hover {
+  top: 760px;
+  opacity: 1;
+}
+
+
+#green {
+  position: absolute;
+  width: 80px;
+  top: 858px;
+  left: 627px;
+  display: block;
+}
+#green:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+label {
+  display: block;
+  margin: 20px 0 0;
+  color: white;
+  position: absolute;
+  top: 852px;
+  left: 635px;
+  opacity: 0;
+}
+label:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+input {
+  position: absolute;
+  left: -999em;
+}
+.hide {
+  position: absolute;
+  opacity: 1;
+  max-height: 0;
+  border: none;
+  z-index: 4;
+  }
+.hide p {
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  color: black;
+  font-size: 24px;
+  width: 335px;
+}
+.ex1 input[type="checkbox"]:checked + div {
+  width: 350px;
+  background-color: #66FF66;
+  opacity: 1;
+  height: 310px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: opacity 1.5s linear, max-height 1.5s linear;
+  z-index: 4;
 }

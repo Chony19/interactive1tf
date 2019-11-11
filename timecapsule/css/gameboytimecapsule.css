@@ -39,7 +39,7 @@
   .switchgb {
   font-family: 'VT323', monospace;
   font-size: 18px;
-  opacity: 1;
+  opacity: 0;
   color: white;
   position: absolute;
   z-index: 5;
@@ -47,6 +47,16 @@
   #onoff {
     top: 70px;
     left: 75px;
+  }
+
+
+  p {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    top: 330px;
+    left: 225px;
+    z-index: 4;
   }
 
 }

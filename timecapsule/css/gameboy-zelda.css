@@ -56,7 +56,7 @@
   .switchgb {
   font-family: 'VT323', monospace;
   font-size: 18px;
-  opacity: 1;
+  opacity: 0;
   color: white;
   position: absolute;
   z-index: 5;
@@ -72,6 +72,54 @@
     transform: rotate(-27deg);
   }
 
+
+  label {
+    position: absolute;
+    display: block;
+    margin: 20px 0 0;
+    color: white;
+    position: absolute;
+    top: 640px;
+    left: 450px;
+    opacity: 0;
+    font-size: 36px;
+    }
+  label:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    }
+  input {
+    position: absolute;
+    left: -999em;
+    }
+  .hide {
+    position: absolute;
+    opacity: 0;
+    max-height: 0;
+    border: none;
+    z-index: 4;
+    top: 235px;
+    left: 115px;
+    }
+  .hide p {
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    width: 325px;
+    }
+  .ex1 input[type="checkbox"]:checked + div {
+    width: 350px;
+    background-color: #27a527;
+    opacity: 1;
+    height: 252px;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: opacity 1.5s linear, max-height 1.5s linear;
+    z-index: 4;
+    }
 
 
 

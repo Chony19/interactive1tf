@@ -88,26 +88,131 @@ body {
   position: relative;
   z-index: 4;
 }
+
 .switch {
   font-family: 'VT323', monospace;
-  opacity: 1;
+  opacity: 0;
   color: white;
   position: absolute;
   z-index: 5;
 }
 #white1 {
-  top: 823px;
+  top: 835px;
   left: 541px;
 }
+#dk {
+  width: 75px;
+  position: absolute;
+  top: 800px;
+  left: 530px;
+  opacity: 0;
+}
+#dk:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white2 {
-  top: 823px;
+  top: 835px;
   left: 720px;
 }
+#home {
+  width: 65px;
+  position: absolute;
+  top: 780px;
+  left: 717px;
+  opacity: 0;
+}
+#home:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white3 {
-  top: 823px;
+  top: 835px;
   left: 840px;
 }
+#spinvadersgif {
+  position: absolute;
+  width: 55px;
+  top: 800px;
+  left: 835px;
+  opacity: 0;
+}
+#spinvadersgif:hover {
+  top: 780px;
+  opacity: 1;
+}
+
 #white4 {
-  top: 823px;
+  top: 835px;
   left: 955px;
+}
+#stfightergif {
+  position: absolute;
+  width: 55px;
+  top: 800px;
+  left: 965px;
+  opacity: 0;
+}
+#stfightergif:hover {
+  top: 760px;
+  opacity: 1;
+}
+
+
+#yellow {
+  position: absolute;
+  width: 80px;
+  top: 861px;
+  left: 557px;
+  display: block;
+}
+#yellow:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+label {
+  display: block;
+  margin: 20px 0 0;
+  color: black;
+  position: absolute;
+  top: 853px;
+  left: 558px;
+  opacity: 0;
+}
+label:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+input {
+  position: absolute;
+  left: -999em;
+}
+.hide {
+  position: absolute;
+  opacity: 0;
+  max-height: 1000px;
+  border: none;
+  }
+.hide p {
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  color: black;
+  font-size: 24px;
+  width: 335px;
+}
+.ex1 input[type="checkbox"]:checked + div {
+  display: block;
+  width: 350px;
+  background-color: #ffd700;
+  opacity: 1;
+  height: 360px;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: opacity 1.5s linear, max-height 1.5s linear;
 }
