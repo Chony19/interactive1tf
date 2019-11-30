@@ -1,0 +1,333 @@
+
+#a-canvas {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  width: 200px;
+  background-color: black;
+  overflow: hidden;
+}
+
+#a-block-s1 {
+  position: absolute;
+  width: 75px;
+  top: -50px;
+  left: 75px;
+  animation: ablocks1 .5s forwards;
+  animation-play-state: paused;
+}
+@keyframes ablocks1 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(0px, 125px);}
+  30% {transform: translate(0px, 150px);}
+  40% {transform: translate(0px, 175px);}
+  50% {transform: translate(-25px, 175px);}
+  60% {transform: translate(-50px, 175px);}
+  70% {transform: translate(-75px, 175px);}
+  100% {transform: translate(-75px, 225px);}
+}
+#a-canvas:hover #a-block-s1 {
+  animation-play-state: running;
+}
+
+
+#a-block-s2 {
+  position: absolute;
+  width: 75px;
+  top: -100px;
+  left: 75px;
+  animation: ablocks2 .5s forwards;
+  animation-delay: .5s;
+  animation-play-state: paused;
+}
+@keyframes ablocks2 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(0px, 125px);}
+  30% {transform: translate(0px, 150px);}
+  40% {transform: translate(0px, 175px);}
+  50% {transform: translate(-25px, 175px);}
+  60% {transform: translate(-50px, 175px);}
+  100% {transform: translate(-50px, 225px);}
+}
+#a-canvas:hover #a-block-s2 {
+  animation-play-state: running;
+}
+
+
+#a-block-s3 {
+  position: absolute;
+  width: 75px;
+  top: -100px;
+  left: 75px;
+  animation: ablocks3 .5s forwards;
+  animation-delay: 3s;
+  animation-play-state: paused;
+}
+@keyframes ablocks3 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 50px);}
+  20% {transform: translate(0px, 100px);}
+  30% {transform: translate(-25px, 100px);}
+  40% {transform: translate(-25px, 125px);}
+  100% {transform: translate(-50px, 125px);}
+}
+#a-canvas:hover #a-block-s3 {
+  animation-play-state: running;
+}
+
+
+#a-block-z1 {
+  position: absolute;
+  width: 75px;
+  top: -100px;
+  left: 75px;
+  animation: ablockz1 .5s forwards;
+  animation-delay: 1s;
+  animation-play-state: paused;
+}
+@keyframes ablockz1 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(0px, 125px);}
+  30% {transform: translate(0px, 150px);}
+  40% {transform: translate(0px, 175px);}
+  50% {transform: translate(25px, 175px);}
+  60% {transform: translate(50px, 175px);}
+  100% {transform: translate(50px, 275px);}
+}
+#a-canvas:hover #a-block-z1 {
+  animation-play-state: running;
+}
+
+
+#a-block-z2 {
+  position: absolute;
+  width: 75px;
+  top: -100px;
+  left: 75px;
+  animation: ablockz2 .5s forwards;
+  animation-delay: 1.5s;
+  animation-play-state: paused;
+}
+@keyframes ablockz2 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(0px, 125px);}
+  30% {transform: translate(0px, 150px);}
+  40% {transform: translate(0px, 175px);}
+  50% {transform: translate(25px, 175px);}
+  100% {transform: translate(25px, 225px);}
+}
+#a-canvas:hover #a-block-z2 {
+  animation-play-state: running;
+}
+
+
+#a-block-z3 {
+  position: absolute;
+  width: 75px;
+  top: -100px;
+  left: 75px;
+  animation: ablockz3 .5s forwards;
+  animation-delay: 3.5s;
+  animation-play-state: paused;
+}
+@keyframes ablockz3 {
+0% {transform: translate(0px, 0px);}
+10% {transform: translate(0px, 50px);}
+20% {transform: translate(0px, 100px);}
+30% {transform: translate(25px, 100px);}
+100% {transform: translate(25px, 125px);}
+}
+#a-canvas:hover #a-block-z3 {
+animation-play-state: running;
+}
+
+
+#a-block-t1 {
+  position: absolute;
+  width: 50px;
+  top: -100px;
+  left: 75px;
+  transform: rotate(180deg);
+  animation: ablockt1 .5s forwards;
+  animation-delay: 2.5s;
+  animation-play-state: paused;
+}
+@keyframes ablockt1 {
+  0% {transform: translate(0px, 0px) rotate(90deg);}
+  10% {transform: translate(0px, 100px) rotate(90deg);}
+  20% {transform: translate(-25px, 100px) rotate(90deg);}
+  30% {transform: translate(-25px, 150px) rotate(180deg);}
+  40% {transform: translate(-50px, 150px) rotate(180deg);}
+  100% {transform: translate(-50px, 175px) rotate(180deg);}
+}
+#a-canvas:hover #a-block-t1 {
+  animation-play-state: running;
+}
+
+
+#a-block-t2 {
+  position: absolute;
+  width: 50px;
+  top: -100px;
+  left: 75px;
+  animation: ablockt2 .5s forwards;
+  animation-delay: 2s;
+  animation-play-state: paused;
+}
+@keyframes ablockt2 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(25px, 100px);}
+  30% {transform: translate(25px, 150px);}
+  40% {transform: translate(50px, 150px);}
+  100% {transform: translate(50px, 175px);}
+}
+#a-canvas:hover #a-block-t2 {
+  animation-play-state: running;
+}
+
+
+
+
+#b-canvas {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#b-block-l1 {
+    position: absolute;
+    width: 50px;
+    top: -100px;
+    left: 75px;
+    animation: bblockl1 .5s forwards;
+    animation-play-state: paused;
+  }
+  @keyframes bblockl1 {
+    0% {transform: translate(0px, 0px);}
+    10% {transform: translate(0px, 100px);}
+    20% {transform: translate(0px, 125px);}
+    30% {transform: translate(0px, 150px);}
+    40% {transform: translate(0px, 175px);}
+    50% {transform: translate(-25px, 175px) rotate(-90deg);}
+    60% {transform: translate(-50px, 175px) rotate(-90deg);}
+    100% {transform: translate(-50px, 250px) rotate(-90deg);}
+  }
+  #b-canvas:hover #b-block-l1 {
+    animation-play-state: running;
+  }
+
+#b-block-l2 {
+  position: absolute;
+  width: 50px;
+  top: -100px;
+  left: 75px;
+  animation: bblockl2 .5s forwards;
+  animation-delay: .5s;
+  animation-play-state: paused;
+}
+@keyframes bblockl2 {
+  0% {transform: translate(0px, 0px);}
+  10% {transform: translate(0px, 100px);}
+  20% {transform: translate(0px, 125px);}
+  30% {transform: translate(0px, 150px) rotate(-90deg);}
+  40% {transform: translate(0px, 175px) rotate(-90deg);}
+  50% {transform: translate(25px, 175px) rotate(-90deg);}
+  60% {transform: translate(50px, 175px) rotate(-90deg);}
+  100% {transform: translate(50px, 250px) rotate(-90deg);}
+}
+#b-canvas:hover #b-block-l2 {
+  animation-play-state: running;
+}
+}
+
+
+
+
+
+/*
+#a-canvas {
+  position: absolute;
+  height: 250px;
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(8,0fr);
+  grid-template-rows: repeat(10,0fr);
+  background-color: blue;
+  padding: 0px;
+}
+
+
+
+#one {
+  max-width: 25px;
+  height: 25px;
+  background-color: black;
+}
+
+#two {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#three {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#four {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+
+#five {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#six {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#seven {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#eight {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#nine {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#ten {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}
+
+#eleven {
+  width:25px;
+  height: 25px;
+  background-color: green;
+}

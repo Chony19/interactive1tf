@@ -1,0 +1,66 @@
+.a-canvas {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+}
+
+#a-block-s-one {
+  position: absolute;
+  top: 88.25%;
+  left: 0.9%;
+  width: 50px;
+}
+
+#a-block-s-two {
+  position: absolute;
+  top: 77.4%;
+  left: 9%;
+  width: 50px;
+}
+
+#a-block-s-three {
+  position: absolute;
+  top: 55.6%;
+  left: 9%;
+  width: 50px;
+}
+
+#a-block-z-one {
+  position: absolute;
+  top: 88.25%;
+  left: 41.65%;
+  width: 50px;
+}
+
+#a-block-z-two {
+  position: absolute;
+  top: 77.4%;
+  left: 33.5%;
+  width: 50px;
+}
+
+#a-block-z-three {
+  position: absolute;
+  top: 55.6%;
+  left: 33.5%;
+  width: 50px;
+}
+
+#a-block-t-one {
+  position: absolute;
+  top: 69.3%;
+  left: 4.9%;
+  width: 50px;
+  transform: rotate(-90deg);
+}
+
+#a-block-t-two {
+  position: absolute;
+  top: 69.3%;
+  left: 37.6%;
+  width: 50px;
+  transform: rotate(90deg);
+}

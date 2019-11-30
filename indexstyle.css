@@ -12,11 +12,6 @@ body {
     background-size: cover;
 }
 
-#column {
-  column-count: 2;
-  column-width: auto;
-}
-
 h1 {
   font-family: "roboto";
   font-style: bold;
