@@ -1,6 +1,17 @@
-.a-canvas {
+.page {
   display: grid;
   position: relative;
+  width: 1600px;
+  height: 1600px;
+  background-color: #808080;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-column-gap: 1%;
+  grid-template-rows: repeat(8, 12.5%);
+  grid-row-gap: 1%;
+}
+
+.a-canvas {
+  display: grid;
   height: 200px;
   width: 200px;
   background-color: black;
@@ -144,4 +155,14 @@
   grid-row-end: 5;
   grid-column-start: 3;
   grid-column-end: 4;
+}
+
+.b-canvas {
+  display: grid;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  overflow: hidden;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, 12.5%);
 }
